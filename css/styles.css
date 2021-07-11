@@ -1,0 +1,94 @@
+body {
+  min-width: 920px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: 20px;
+  color: #7f7f7f; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  width: 400px;
+  height: auto;
+  background: yellow;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.cover {
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover .active{
+  transform : rotateAnimations 3s linear infinite;
+}
+
+.song {
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+}
+
+.progress__container {
+  width: 90%;
+  height: 30px;
+  margin: 10px auto;
+  color: orange;
+  border: 2px black solid;
+  border-radius: 15px;
+}
+
+.progress {
+  display: block;
+  width: 40%;
+  background: blue;
+  height: 100%;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: pink;
+  border-radius: 50%;
+}
+
+@keyframes rotateAnimations {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
